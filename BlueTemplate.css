@@ -1,0 +1,170 @@
+.brochure {
+  font-family: "Segoe UI", sans-serif;
+  color: #1c2b36;
+  background-color: #f5f9fc;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.brochure-header {
+  background: linear-gradient(90deg, #5d8c2e, #1b3c54);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-section {
+  text-align: center;
+}
+
+.logo-circle {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  color: #5d8c2e;
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  font-size: 12px;
+}
+
+.header-title h1 {
+  margin: 0;
+  font-size: 22px;
+}
+
+.template-label {
+  font-size: 12px;
+}
+
+.header-strip {
+  background-color: #12364c;
+  color: white;
+  padding: 8px;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.content {
+  padding: 20px;
+}
+
+.headline {
+  color: #1c2b36;
+  margin: 0;
+}
+
+.subheadline {
+  color: #5d8c2e;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.chart-section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.bar {
+  width: 20px;
+  background-color: #5d8c2e;
+}
+
+.bar-1 {
+  height: 30px;
+}
+.bar-2 {
+  height: 50px;
+}
+.bar-3 {
+  height: 70px;
+}
+.bar-4 {
+  height: 90px;
+}
+
+.bar-info {
+  max-width: 300px;
+}
+
+.points-section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.point {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+
+.green {
+  background-color: #5d8c2e;
+}
+.lightgreen {
+  background-color: #84b547;
+}
+.olive {
+  background-color: #b5cc6a;
+}
+
+.editable {
+  color: #5d8c2e;
+  font-size: 13px;
+  margin-top: 3px;
+}
+
+.pie-chart-section {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.pie-chart {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#5d8c2e 25%, #1b3c54 0 100%);
+  margin: 0 auto 10px;
+}
+
+.footer {
+  background-color: #12364c;
+  color: white;
+  padding: 15px;
+  font-size: 13px;
+  text-align: center;
+}

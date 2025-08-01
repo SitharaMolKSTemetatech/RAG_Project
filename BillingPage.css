@@ -1,0 +1,194 @@
+/* Layout */
+.settings-page-container {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5faff;
+}
+
+.sidebar {
+  width: 60px;
+  background-color: #fff;
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 0 4px rgba(0, 0, 0, 0.05);
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar-icon-link {
+  color: #007bff;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.sidebar-icon-link:hover {
+  color: #0056b3;
+}
+
+/* Billing content */
+.billing-page {
+  flex: 1;
+  padding: 30px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  color: #012a3a;
+}
+
+/* Card sections */
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.subscription-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.text-muted {
+  color: #6c757d;
+}
+
+.btn {
+  background-color: #00bcd4;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #009faf;
+}
+
+.seat-usage {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  font-size: 14px;
+}
+
+.warning {
+  color: orange;
+  font-size: 18px;
+  margin-left: 6px;
+}
+
+.user-table {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+thead {
+  background-color: #eaf7fb;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.email {
+  margin: 0;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.status-active {
+  background-color: #00c292;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  padding-top: 10px;
+}
+
+.pagination select {
+  margin: 0 5px;
+}
+
+.pagination-arrows {
+  color: #aaa;
+  font-size: 18px;
+  cursor: default;
+}
+
+.no-invoices {
+  background: #e7f5ff;
+  color: #006d9c;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .subscription-info, .seat-usage {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .billing-page {
+    padding: 20px 10px;
+  }
+
+  .sidebar {
+    width: 50px;
+  }
+
+  .sidebar-icon-link {
+    font-size: 18px;
+  }
+}

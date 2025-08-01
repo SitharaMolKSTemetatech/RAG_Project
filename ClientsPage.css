@@ -1,0 +1,262 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4faff;
+}
+
+.library-container {
+  display: flex;
+  height: 100vh;
+  background-color: #f4faff;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  width: 90px;
+  background-color: #00223f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  color: white;
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.sidebar-icon-link {
+  color: white;
+}
+
+.sidebar-icon-link:hover {
+  color: #a5efff;
+}
+
+/* Main Content */
+.accounts-page {
+  flex: 1;
+  padding: 40px 20px;
+  color: #0a3d4e;
+  text-align: center;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.subtext {
+  font-size: 16px;
+  color: #608695;
+  margin-bottom: 32px;
+}
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 12px;
+  background-color: white;
+  min-width: 260px;
+  flex: 1;
+  max-width: 300px;
+}
+
+.search-icon {
+  margin-right: 8px;
+  color: #557;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+}
+
+.filter-btn {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #557;
+  transition: background-color 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #f0f0f0;
+}
+
+.new-account-btn {
+  background: linear-gradient(to right, #63d457, #6dd57e);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.new-account-btn:hover {
+  opacity: 0.9;
+}
+
+.account-list {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.account-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 16px 20px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  min-width: 300px;
+  max-width: 400px;
+  width: 100%;
+  gap: 12px;
+}
+
+.account-star {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.account-name {
+  font-size: 16px;
+  color: #0a3d4e;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .new-account-btn {
+    justify-content: center;
+  }
+
+  .search-container,
+  .filter-btn {
+    width: 100%;
+  }
+
+  .account-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Modal container */
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+  text-align: left;
+}
+
+.modal h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #0a3d4e;
+}
+
+.modal p {
+  font-size: 15px;
+  color: #5c7a87;
+  margin-bottom: 25px;
+}
+
+/* Close button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #0a3d4e;
+  cursor: pointer;
+}
+
+/* Option cards */
+.option-card {
+  display: flex;
+  align-items: center;
+  padding: 16px 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.option-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #f1faff;
+}
+
+.option-card .icon {
+  margin-right: 16px;
+  color: #3c7b8f;
+  font-size: 28px;
+}
+
+.option-card .info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #0a3d4e;
+}
+
+.option-card .info p {
+  margin: 4px 0 0;
+  color: #5c7a87;
+  font-size: 14px;
+}
